@@ -1,0 +1,19 @@
+﻿<Window x:Class="AutoHeaven.Views.ProblemListWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoHeaven.Views"
+        mc:Ignorable="d"
+        Title="Список неисправностей" WindowStartupLocation="CenterScreen" Height="150" Width="400">
+    <Grid>
+        <DataGrid x:Name="serviceDateGrid" AutoGenerateColumns="False" 
+                  SelectionMode="Single"  IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Услуга" Binding="{Binding ServiceName}" Width="180"/>
+                <DataGridTextColumn Header="Цена" Binding="{Binding Cost}" Width="auto"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Window>

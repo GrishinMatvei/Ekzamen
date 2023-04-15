@@ -1,0 +1,6 @@
+C:\Users\SP4-IVC\Desktop\CoreLib\CoreLib\bin\Debug\CoreLib.dll
+C:\Users\SP4-IVC\Desktop\CoreLib\CoreLib\bin\Debug\CoreLib.pdb
+C:\Users\SP4-IVC\Desktop\CoreLib\CoreLib\obj\Debug\CoreLib.csproj.AssemblyReference.cache
+C:\Users\SP4-IVC\Desktop\CoreLib\CoreLib\obj\Debug\CoreLib.csproj.CoreCompileInputs.cache
+C:\Users\SP4-IVC\Desktop\CoreLib\CoreLib\obj\Debug\CoreLib.dll
+C:\Users\SP4-IVC\Desktop\CoreLib\CoreLib\obj\Debug\CoreLib.pdb

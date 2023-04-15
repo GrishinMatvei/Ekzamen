@@ -1,0 +1,53 @@
+﻿<Window x:Class="AutoHeaven.Views.DemoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoHeaven.Views"
+        mc:Ignorable="d"
+        Title="Демонстрационный режим" ResizeMode="CanMinimize"
+        WindowStartupLocation="CenterScreen" Height="450" Width="800">
+    <Grid>
+        <ListView x:Name="orderList">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Border Margin="10" BorderThickness="1">
+                        <StackPanel Orientation="Horizontal" Width="700">
+                            <StackPanel Orientation="Vertical" Width="600" VerticalAlignment="Center">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="250"/>
+                                        <ColumnDefinition Width="250"/>
+                                        <ColumnDefinition Width="auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <!--#region ФИО-->
+                                    <StackPanel Grid.Column="0" Orientation="Vertical">
+                                        <TextBlock Text="{Binding Personal.LastName}"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <TextBlock Text="{Binding Personal.FirstName}"/>
+                                            <TextBlock Text="{Binding Personal.MiddleName}" Margin="5,0,0,0"/>
+                                        </StackPanel>
+                                    </StackPanel>
+                                    <!--#endregion-->
+                                    <!--#region Авто-->
+                                    <StackPanel Grid.Column="1" Orientation="Vertical">
+                                        <TextBlock Text="{Binding Auto.Model.ModelName}"/>
+                                        <TextBlock Text="{Binding Auto.Model.Mark.MarkName}"/>
+                                        <TextBlock Text="{Binding Auto.StateNumber}"/>
+                                    </StackPanel>
+                                    <!--#endregion-->
+                                    <!--#region Дата и статус-->
+                                    <StackPanel Grid.Column="2" Orientation="Vertical">
+                                        <TextBlock Text="{Binding OrderDate}"/>
+                                        <TextBlock Text="{Binding Status.StatusName}"/>
+                                    </StackPanel>
+                                    <!--#endregion-->
+                                </Grid>
+                            </StackPanel>
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</Window>
